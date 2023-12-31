@@ -1,0 +1,7 @@
+<suite name="PrioratizationSuite">
+    <test name = "Prioraties tests">
+        <classes>
+            <class name="priority.OrderOfMethodExecution"/>
+        </classes>
+    </test>
+</suite>

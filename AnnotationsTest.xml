@@ -1,0 +1,7 @@
+<suite name="Annotations">
+    <test name = "Annotation tests">
+        <classes>
+            <class name = "annotation.AnnotationOrderTest" />
+        </classes>
+    </test>
+</suite>

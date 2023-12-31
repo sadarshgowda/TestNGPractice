@@ -1,0 +1,8 @@
+<suite name = "OptionalParameterSuite">
+    <test name = "TestOptionalParameter" enabled = "true">
+        <parameter name="b" value ="2"/>
+        <classes>
+            <class name = "parameters.TestOptionalParameter" />
+        </classes>
+    </test>
+</suite>

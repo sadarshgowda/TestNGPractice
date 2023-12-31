@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Test">
+    <test name="running whole class">
+        <classes>
+            <class name="testing.Authentication" />
+            <class name="testing.TestPostMethod" />
+        </classes>
+    </test>
+
+    <test name="running particular methods in class">
+        <classes>
+            <class name="testing.Authentication">
+            <methods>
+                <include name="basicAuthentication"/>
+                <include name="bearerTokenAuthentication"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
