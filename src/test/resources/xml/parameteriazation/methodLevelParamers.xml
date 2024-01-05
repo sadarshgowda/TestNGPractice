@@ -1,0 +1,21 @@
+<suite name = "ParameterizedTestSuite">
+    <test name = "ParameterTests">
+        <classes>
+            <class name = "parameters.ParameterizedTestOperations">
+                <methods>
+
+                    <include name="testReadMultipleParameter">
+                    <parameter name="a" value = "100" />
+                    <parameter name="b" value = "100" /> <!-- , parameters defined at lower levels (e.g., test or method level) can override values defined at higher levels-->
+                    <parameter name="c" value="100"/>
+                    </include>
+
+                    <include name="testReadSingleParameter">
+                    <parameter name="c" value="200"/>
+                    </include>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
