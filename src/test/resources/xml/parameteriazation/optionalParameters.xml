@@ -1,6 +1,6 @@
 <suite name = "OptionalParameterSuite">
     <test name = "TestOptionalParameter" enabled = "true">
-        <parameter name="b" value ="2"/>
+        <parameter name="c" value ="2"/>  <!-- parameters defined in xml file will override the optional parameter defined in the test-->
         <classes>
             <class name = "parameters.TestOptionalParameter" />
         </classes>

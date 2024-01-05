@@ -1,0 +1,15 @@
+<suite name = "ParameterizedTestSuite">
+    <parameter name="a" value = "5" />
+    <parameter name="b" value = "5" /> <!-- parameters defined inside suite level has low prio -->
+    <parameter name="c" value="5"/>
+    <test name = "ParameterTests">
+        <classes>
+            <class name = "parameters.ParameterizedTestOperations"/>
+        </classes>
+    </test>
+    <test name = "ParameterTest">
+        <classes>
+            <class name = "parameters.ParameterizedTestOperations"/>
+        </classes>
+    </test>
+</suite>
