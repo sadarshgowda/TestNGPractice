@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class ParameterizedTestOperations {
 
     @Parameters({"a", "b"})
-    @Test
+    @Test(enabled = true)
     public void testReadMultipleParameter(String value1, String value2) {
         int val1 = Integer.parseInt(value1);
         int val2 = Integer.parseInt(value2);

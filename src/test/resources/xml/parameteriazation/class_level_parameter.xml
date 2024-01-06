@@ -1,0 +1,14 @@
+<suite name = "EnableDisable">
+    <test name = "testCaseEnabledByDefault">
+        <classes>
+            <class name = "parameters.ParameterizedTestOperations">
+                <parameter name="a" value = "100" />
+                <parameter name="b" value = "100" /> <!-- test case is enabled by default-->
+                <parameter name="c" value="100"/>
+                <methods>
+                    <include name = "testReadMultipleParameter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
