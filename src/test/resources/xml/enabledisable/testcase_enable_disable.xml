@@ -1,0 +1,27 @@
+<suite name = "EnableDisable" enabled = "true">  <!-- This suite will be enabled, but by default also its enabled -->
+    <test name = "testCaseEnabledByDefault">
+        <classes>
+            <class name = "parameters.ParameterizedTestOperations">
+                <parameter name="a" value = "100" />
+                <parameter name="b" value = "100" />
+                <parameter name="c" value="100"/>
+                <methods>
+                    <include name = "testReadMultipleParameter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name = "testCaseDisabledByDefault" enabled = "false">
+        <classes>
+            <class name = "parameters.ParameterizedTestOperations">
+                <!-- test case is disabled-->
+
+                <methods>
+                    <parameter name="c" value="100"/>
+                    <include name = "testReadSingleParameter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
