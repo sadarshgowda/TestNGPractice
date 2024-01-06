@@ -2,6 +2,8 @@ package priority;
 
 import org.testng.annotations.Test;
 
+//default priority of zero when no explicit priority is provided
+// we can give negative value to priority, as integer range from -2^31 to 2^31-1, negative has high priority
 public class DefaultPriority {
 
     @Test(priority = 1)
@@ -20,8 +22,6 @@ public class DefaultPriority {
         System.out.println("BOok");
     }
 
-    //// default priority of zero when no explicit priority is provided
-    // we can give negative value to priority, as integer range from -2^31 to 2^31-1, negative has high priority
     @Test
     public void Login(){
         System.out.println("login");
