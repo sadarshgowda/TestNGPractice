@@ -1,0 +1,21 @@
+<suite name = "group in group">
+    <test name = "define group inside group">
+        <groups>
+            <define name="daily build">
+                <include name = "sanity"/>
+            </define>
+
+            <define name = "release build">
+                <include name = "regression"/>
+            </define>
+
+            <run>
+                <include name = "release build"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="grouping.TestGroupingExample"/>
+        </classes>
+    </test>
+</suite>
