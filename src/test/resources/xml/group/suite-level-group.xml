@@ -1,0 +1,27 @@
+<suite name = "TestSuites">
+    <groups>
+        <run>
+            <include name="sanity"/>
+            <exclude name = "regression"/>
+        </run>
+    </groups>
+
+    <test name="test level grouping 1">
+        <classes>
+            <class name = "grouping.TestGroupingExample"/>
+        </classes>
+    </test>
+
+    <test name="test level grouping 2">
+        <groups>
+            <run>
+                <include name="functionality"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="grouping.TestGroupingExample"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,24 @@
+<suite name="depends on groups">
+
+    <test name = "dependency in groups">
+        <groups>
+            <dependencies>
+                <group name = "regression" depends-on="sanity"/>
+            </dependencies>
+        </groups>
+        <classes>
+            <class name = "grouping.TestGroupingExample"/>
+        </classes>
+    </test>
+
+    <test name = "test depends on groups">
+        <groups>
+            <run>
+                <include name = "groupA"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "dependency.DependsOnGroups"/>
+        </classes>
+    </test>
+</suite>
